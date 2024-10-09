@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 600px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+input#wordOutput {
+    height: auto;
+    min-height: 80px;
+    max-height: 200px;
+    font-size: .9rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #308134;
+}
+
+button:nth-child(10) {
+    grid-column: span 2;
+}
+
+.translate {
+    background-color: aqua;
+    color:#333;
+}
+
+.clear {
+    background-color: red;
+    color: #333;
+}
+
+.translate:hover {
+    background-color: blue;
+    color: white;
+}
+
+.clear:hover{
+    background-color: #333;
+    color: red;
+}
